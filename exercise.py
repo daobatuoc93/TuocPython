@@ -60,6 +60,7 @@ for i in D:
 result = ','.join(x)
 print(result)
 # câu 10:
+'''using this function to create maxtrix'''
 arr = [int(x) for x in input("nhập vào x,y:").split(',')]
 
 value = [[x*y for x in range(arr[1])] for y in range(arr[0])]
