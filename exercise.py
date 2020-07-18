@@ -52,20 +52,20 @@ class Person:
         print("name: {} \nold: {}\ngentle: {}\nheigh:{}".format(self.name, self.year, self.gentle, self.heigh))
 #  Phần 2 
 # câu 9 
-import math
-D = [x for x in input("nhap vao day so:").split(",")]
-x = []
-for i in D:
-    x.append(str(round(math.sqrt((2*50*int(i))/30))))
-result = ','.join(x)
-print(result)
-# câu 10:
-'''using this function to create maxtrix '''
-# make sure you are need to create maxtrix 2
-arr = [int(x) for x in input("nhập vào x,y:").split(',')]
+# import math
+# D = [x for x in input("nhap vao day so:").split(",")]
+# x = []
+# for i in D:
+#     x.append(str(round(math.sqrt((2*50*int(i))/30))))
+# result = ','.join(x)
+# print(result)
+# # câu 10:
+# '''using this function to create maxtrix '''
+# # make sure you are need to create maxtrix 2
+# arr = [int(x) for x in input("nhập vào x,y:").split(',')]
 
-value = [[x*y for x in range(arr[1])] for y in range(arr[0])]
-print(value)
+# value = [[x*y for x in range(arr[1])] for y in range(arr[0])]
+# print(value)
 
 
 
@@ -79,3 +79,11 @@ Giả sử đầu vào được nhập là: without,hello,bag,world,
 thì đầu ra sẽ là: bag,hello,without,world.
 '''
 
+string = [stg for stg in input("Nhap vao chuoi string:").split(",")]
+for i in range(len(string)):
+    for j in range(len(string)):
+        if (string[i] < string[j]):
+            tmp = string[j]
+            string[j] = string[i]
+            string[i] = tmp
+print(string)
