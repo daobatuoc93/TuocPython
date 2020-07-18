@@ -60,10 +60,10 @@ class Person:
 # result = ','.join(x)
 # print(result)
 # câu 10:
-# arr = [int(x) for x in input("nhập vào x,y:").split(',')]
+arr = [int(x) for x in input("nhập vào x,y:").split(',')]
 
-# value = [[x*y for x in range(arr[1])] for y in range(arr[0])]
-# print(value)
+value = [[x*y for x in range(arr[1])] for y in range(arr[0])]
+print(value)
 
 
 
