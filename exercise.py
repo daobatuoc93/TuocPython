@@ -52,18 +52,18 @@ class Person:
         print("name: {} \nold: {}\ngentle: {}\nheigh:{}".format(self.name, self.year, self.gentle, self.heigh))
 #  Phần 2 
 # câu 9 
-# import math
-# D = [x for x in input("nhap vao day so:").split(",")]
-# x = []
-# for i in D:
-#     x.append(str(round(math.sqrt((2*50*int(i))/30))))
-# result = ','.join(x)
-# print(result)
+import math
+D = [x for x in input("nhap vao day so:").split(",")]
+x = []
+for i in D:
+    x.append(str(round(math.sqrt((2*50*int(i))/30))))
+result = ','.join(x)
+print(result)
 # câu 10:
-# arr = [int(x) for x in input("nhập vào x,y:").split(',')]
+arr = [int(x) for x in input("nhập vào x,y:").split(',')]
 
-# value = [[x*y for x in range(arr[1])] for y in range(arr[0])]
-# print(value)
+value = [[x*y for x in range(arr[1])] for y in range(arr[0])]
+print(value)
 
 
 
@@ -76,3 +76,4 @@ phân tách nhau bởi dấu phẩy và in những từ đó thành chuỗi theo
 Giả sử đầu vào được nhập là: without,hello,bag,world,
 thì đầu ra sẽ là: bag,hello,without,world.
 '''
+
