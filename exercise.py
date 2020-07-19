@@ -79,11 +79,20 @@ Giả sử đầu vào được nhập là: without,hello,bag,world,
 thì đầu ra sẽ là: bag,hello,without,world.
 '''
 
-string = [stg for stg in input("Nhap vao chuoi string:").split(",")]
-for i in range(len(string)):
-    for j in range(len(string)):
-        if (string[i] < string[j]):
-            tmp = string[j]
-            string[j] = string[i]
-            string[i] = tmp
-print(string)
+# string = [stg for stg in input("Nhap vao chuoi string:").split(",")]
+# for i in range(len(string)):
+#     for j in range(len(string)):
+#         if (string[i] < string[j]):
+#             tmp = string[j]
+#             string[j] = string[i]
+#             string[i] = tmp
+# câu 12:
+lines = []
+while True:
+   s = input()
+   if (s):
+      lines.append(s.upper())
+   else:
+      break
+for sentence in lines:
+    print (sentence)
